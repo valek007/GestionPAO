@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class ClienteVipDAO {
 
-	public void insertaClienteVIP(Cliente cliente, String tipo) {
-		System.out.println(
-				"Trabajo realizado OK. Cliente " + tipo + " " + cliente.getNombre() + " insertado con exito.\n");
+	public void insertaClienteVIP() {
+		System.out.println("----------------------------------------------------");
+		System.out.println("Trabajo realizado. Cliente VIP insertado con exito.\n");
 	}
 
 }

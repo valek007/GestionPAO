@@ -21,18 +21,13 @@ public class ClasePrincipal {
 		
 		//Cliente nuevo
 		Cliente paco = new Cliente("Paco", "Especial");
+		paco.setTipo("zumbado");
 		
 		
 		// Llamar al método
 		cliente1.insertaCliente();
-//		cliente2.insertaClienteVIP(paco, paco.getTipo());
-//		cliente3.insertaClienteOTRO();
-		
-		cliente1.setCodigoCliente("007");
-		cliente1.setValoracionCliente("Positiva");
-		
-		String codigoCl = cliente1.getCodigoCliente();
-		String valoraCl = cliente1.getValoracionCliente();
+		cliente2.insertaClienteVIP();
+		cliente3.insertaClienteOTRO(paco, paco.getTipo());
 		
 		// Cerrar el contexto
 		context.close();
