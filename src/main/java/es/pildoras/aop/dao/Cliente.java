@@ -28,4 +28,9 @@ public class Cliente {
 		this.tipo = tipo;
 	}
 
+	@Override
+	public String toString() {
+		return "Cliente: "+nombre + ", tipo: " + tipo;
+	}
+
 }

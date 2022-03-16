@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class ClienteOtroDAO {
 	
-	public String insertaClienteOTRO(Cliente cliente, String tipo) {
+	public String insertaClienteOTRO(Cliente cliente) {
 		System.out.println("----------------------------------------------------");
-		System.out.println("Trabajo realizado. Cliente " + tipo + " " + cliente.getNombre() + " insertado con exito.\n");
+		System.out.println("Trabajo realizado. Cliente " + cliente.getTipo() + " " + cliente.getNombre() + " insertado con exito.\n");
 		return "Hola Mundo";
 	}
  
